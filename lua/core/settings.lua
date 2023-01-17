@@ -1,6 +1,7 @@
-vim.cmd[[colorscheme adwaita]]
+vim.cmd[[colorscheme gruvbox]]
 vim.g.mapleader = " "
 vim.cmd("set number")
+vim.diagnostic.config({virtual_text=true})
 
 -- telescope general keymaps 
 local builtin = require('telescope.builtin')

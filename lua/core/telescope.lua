@@ -1,4 +1,3 @@
-local fb_actions = require "telescope".extensions.file_browser.actions
 local actions = require "telescope.actions"
 
 require('telescope').setup{
@@ -35,28 +34,5 @@ require('telescope').setup{
             find_command = {"fd", "--type=file"},
         },
     },
-    extensions = {
-        fzf = {
-            fuzzy = true,
-            override_generic_sorter = true,
-            override_file_sorter = true,
-            case_mode = "smart_case",
-        },
-        file_browser = {
-            theme = "ivy",
-            hidden = "true",
-            mappings = {
-                ["i"] = {
-                    ["<C-a>"] = fb_actions.create,
-                },
-                ["n"] = {
-                    ["a"] = fb_actions.create,
-                },
-            }
-        }
-    }
 }
 
-require('telescope').load_extension('fzf')
-require('telescope').load_extension('file_browser')
-require('telescope').load_extension('projects')

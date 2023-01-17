@@ -6,21 +6,21 @@ return require('packer').startup(function(use)
   -- telescope.nvim
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = {{'BurntSushi/ripgrep'},{'nvim-lua/plenary.nvim'},{'sharkdp/fd'}}
   }
-  -- telescope plugins
+   -- telescope plugins
   use {
     "nvim-telescope/telescope-fzf-native.nvim",
     run = "make"
   }
-  use "nvim-telescope/telescope-file-browser.nvim"
+  use {"nvim-telescope/telescope-file-browser.nvim"}
   -- lualine.nvim
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   -- impatient.nvim (cache for starting nvim quickly)
-  use 'lewis6991/impatient.nvim'
+  use {'lewis6991/impatient.nvim'}
   -- vim-which-key
   use { "liuchengxu/vim-which-key" }
   --nvim-autopairs 
@@ -41,6 +41,7 @@ return require('packer').startup(function(use)
   use {'nvim-tree/nvim-tree.lua',
     requires = {'nvim-tree/nvim-web-devicons',}
   }
+
   --themes 
   use {'ellisonleao/gruvbox.nvim' }
   use {"catppuccin/nvim", as = "catppuccin"}
@@ -72,5 +73,4 @@ return require('packer').startup(function(use)
       {'rafamadriz/friendly-snippets'},
     }
   }
-
 end)

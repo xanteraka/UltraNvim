@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/user/.local/share/nvim/site/pack/packer/start/everforest-nvim",
     url = "https://github.com/neanias/everforest-nvim"
   },
+  fd = {
+    loaded = true,
+    path = "/home/user/.local/share/nvim/site/pack/packer/start/fd",
+    url = "https://github.com/sharkdp/fd"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/user/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -229,6 +234,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/user/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ripgrep = {
+    loaded = true,
+    path = "/home/user/.local/share/nvim/site/pack/packer/start/ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
