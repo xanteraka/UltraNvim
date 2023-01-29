@@ -7,3 +7,4 @@ require("core.autopairs")
 require("core.luabar")
 require("core.treesitter")
 require("core.telescope")
+

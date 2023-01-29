@@ -1,4 +1,4 @@
-vim.cmd[[colorscheme gruvbox]]
+vim.cmd[[colorscheme themer_scery]]
 vim.g.mapleader = " "
 vim.cmd("set number")
 vim.diagnostic.config({virtual_text=true})
@@ -11,3 +11,4 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 -- nvim tree specific keybingdings 
 vim.keymap.set('n', '<leader>tt', vim.cmd.NvimTreeToggle)
+

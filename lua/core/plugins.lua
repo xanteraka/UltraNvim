@@ -34,14 +34,13 @@ return require('packer').startup(function(use)
   -- Comment.nvim 
   use {"numToStr/Comment.nvim"}
   -- nvim-web-devicons
-  use 'nvim-tree/nvim-web-devicons'
+  use {'nvim-tree/nvim-web-devicons'}
   -- nvim-treesitter
   use {'nvim-treesitter/nvim-treesitter',{ run =':TSUpdate'}}
   -- nvim-tree W devicons
   use {'nvim-tree/nvim-tree.lua',
     requires = {'nvim-tree/nvim-web-devicons',}
   }
-
   --themes 
   use {'ellisonleao/gruvbox.nvim' }
   use {"catppuccin/nvim", as = "catppuccin"}
@@ -51,6 +50,8 @@ return require('packer').startup(function(use)
   use {'Mofiqul/adwaita.nvim'}
   use {'tanvirtin/monokai.nvim'}
   use {'Mofiqul/dracula.nvim'}
+--themer literally just for the built in colors 
+  use{"themercorp/themer.lua"}
   --lsp
   use {
     'VonHeikemen/lsp-zero.nvim',
