@@ -1,5 +1,5 @@
 vim.cmd [[packadd packer.nvim]]
-return require('packer').startup(function(use)
+return require('packer').startup({function(use)
   use {'wbthomason/packer.nvim'}
   -- bufferline.nvim
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
@@ -74,4 +74,14 @@ return require('packer').startup(function(use)
       {'rafamadriz/friendly-snippets'},
     }
   }
-end)
+end, 
+config = {
+	display={
+		open_fn=function()
+			return require('packer.util').float({border = 'rounded'})
+		end 
+	},
+	profile = {
+		enable=false,
+	}
+}})
