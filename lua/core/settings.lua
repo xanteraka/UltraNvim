@@ -1,4 +1,4 @@
-vim.cmd[[colorscheme themer_scery]]
+vim.cmd[[colorscheme adwaita]]
 vim.g.mapleader = " "
 vim.cmd("set number")
 vim.diagnostic.config({virtual_text=true})
